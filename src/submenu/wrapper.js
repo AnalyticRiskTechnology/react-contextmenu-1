@@ -1,6 +1,7 @@
 import React from "react";
+import createReactClass from 'create-react-class';
 
-const SubMenuWrapper = React.createClass({
+const SubMenuWrapper = createReactClass({
     displayName: "SubMenuWrapper",
     propTypes: {
         visible: React.PropTypes.bool

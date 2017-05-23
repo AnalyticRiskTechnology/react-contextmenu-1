@@ -1,11 +1,12 @@
 import React from "react";
+import createReactClass from 'create-react-class';
 import classnames from "classnames";
 import assign from "object-assign";
 import monitor from "./monitor";
 
 let { PropTypes } = React;
 
-const MenuItem = React.createClass({
+const MenuItem = createReactClass({
     displayName: "MenuItem",
     propTypes: {
         onClick: PropTypes.func.isRequired,
@@ -26,8 +27,8 @@ const MenuItem = React.createClass({
         event.preventDefault();
 
         if (disabled) return;
-        
-        
+
+
         var newData = {}
         assign(newData, data, monitor.getItem());
 

@@ -1,4 +1,5 @@
 import React from "react";
+import createReactClass from 'create-react-class';
 import invariant from "invariant";
 import _isObject from "lodash.isobject";
 
@@ -27,7 +28,7 @@ export default function(identifier, configure) {
         }
 
 
-        return React.createClass({
+        return createReactClass({
             displayName: `${displayName}ContextMenuLayer`,
             getDefaultProps() {
                 return {

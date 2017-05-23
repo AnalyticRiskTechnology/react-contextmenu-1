@@ -1,4 +1,5 @@
 import React from "react";
+import createReactClass from 'create-react-class';
 import classnames from "classnames";
 
 import MenuWrapper from "./wrapper";
@@ -8,7 +9,7 @@ const menuStyles = {
     zIndex: "auto"
 };
 
-let SubMenu = React.createClass({
+let SubMenu = createReactClass({
     displayName: "SubMenu",
     propTypes: {
         title: React.PropTypes.string.isRequired,

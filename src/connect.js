@@ -1,4 +1,5 @@
 import React from "react";
+import createReactClass from 'create-react-class';
 import store from "./redux/store";
 
 export default function(Component) {
@@ -6,7 +7,7 @@ export default function(Component) {
         || Component.name
         || "Component";
 
-    return React.createClass({
+    return createReactClass({
         displayName: `ContextMenuConnector(${displayName})`,
         getInitialState() {
             return {
