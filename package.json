@@ -39,6 +39,7 @@
     "invariant": "^2.2.1",
     "lodash.isobject": "^3.0.2",
     "object-assign": "^4.1.0",
+    "prop-types": "^15.5.10",
     "react-overlays": "^0.7.0",
     "redux": "^3.5.2"
   },

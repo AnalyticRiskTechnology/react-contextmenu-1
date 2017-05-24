@@ -3,8 +3,7 @@ import createReactClass from 'create-react-class';
 import classnames from "classnames";
 import assign from "object-assign";
 import monitor from "./monitor";
-
-let { PropTypes } = React;
+import PropTypes from 'prop-types';
 
 const MenuItem = createReactClass({
     displayName: "MenuItem",

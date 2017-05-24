@@ -16,6 +16,10 @@ var _classnames = require("classnames");
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _wrapper = require("./wrapper");
 
 var _wrapper2 = _interopRequireDefault(_wrapper);
@@ -30,9 +34,9 @@ var menuStyles = {
 var SubMenu = (0, _createReactClass2.default)({
     displayName: "SubMenu",
     propTypes: {
-        title: _react2.default.PropTypes.string.isRequired,
-        disabled: _react2.default.PropTypes.bool,
-        hoverDelay: _react2.default.PropTypes.number
+        title: _propTypes2.default.string.isRequired,
+        disabled: _propTypes2.default.bool,
+        hoverDelay: _propTypes2.default.number
     },
     getDefaultProps: function getDefaultProps() {
         return {

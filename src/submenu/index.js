@@ -1,7 +1,7 @@
 import React from "react";
 import createReactClass from 'create-react-class';
 import classnames from "classnames";
-
+import PropTypes from 'prop-types';
 import MenuWrapper from "./wrapper";
 
 const menuStyles = {
@@ -12,9 +12,9 @@ const menuStyles = {
 let SubMenu = createReactClass({
     displayName: "SubMenu",
     propTypes: {
-        title: React.PropTypes.string.isRequired,
-        disabled: React.PropTypes.bool,
-        hoverDelay: React.PropTypes.number
+        title: PropTypes.string.isRequired,
+        disabled: PropTypes.bool,
+        hoverDelay: PropTypes.number
     },
     getDefaultProps() {
         return {

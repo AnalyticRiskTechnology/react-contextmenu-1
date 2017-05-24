@@ -22,15 +22,16 @@ var _wrapper = require("./wrapper");
 
 var _wrapper2 = _interopRequireDefault(_wrapper);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var PropTypes = _react2.default.PropTypes;
-
 
 var ContextMenu = (0, _createReactClass2.default)({
     displayName: "ContextMenu",
     propTypes: {
-        identifier: PropTypes.string.isRequired
+        identifier: _propTypes2.default.string.isRequired
     },
     getInitialState: function getInitialState() {
         return _store2.default.getState();

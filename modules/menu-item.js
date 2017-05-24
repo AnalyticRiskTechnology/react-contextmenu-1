@@ -26,20 +26,21 @@ var _monitor = require("./monitor");
 
 var _monitor2 = _interopRequireDefault(_monitor);
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var PropTypes = _react2.default.PropTypes;
-
-
 var MenuItem = (0, _createReactClass2.default)({
     displayName: "MenuItem",
     propTypes: {
-        onClick: PropTypes.func.isRequired,
-        data: PropTypes.object,
-        disabled: PropTypes.bool,
-        preventClose: PropTypes.bool
+        onClick: _propTypes2.default.func.isRequired,
+        data: _propTypes2.default.object,
+        disabled: _propTypes2.default.bool,
+        preventClose: _propTypes2.default.bool
     },
     getDefaultProps: function getDefaultProps() {
         return {

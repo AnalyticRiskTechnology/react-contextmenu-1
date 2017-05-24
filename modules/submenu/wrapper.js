@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -6,20 +6,24 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _createReactClass = require("create-react-class");
+var _createReactClass = require('create-react-class');
 
 var _createReactClass2 = _interopRequireDefault(_createReactClass);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SubMenuWrapper = (0, _createReactClass2.default)({
     displayName: "SubMenuWrapper",
     propTypes: {
-        visible: _react2.default.PropTypes.bool
+        visible: _propTypes2.default.bool
     },
     getInitialState: function getInitialState() {
         return {
@@ -94,10 +98,10 @@ var SubMenuWrapper = (0, _createReactClass2.default)({
         }, this.getPositionStyles());
 
         return _react2.default.createElement(
-            "nav",
+            'nav',
             { ref: function ref(c) {
                     return _this2.menu = c;
-                }, style: style, className: "react-context-menu" },
+                }, style: style, className: 'react-context-menu' },
             children
         );
     }
